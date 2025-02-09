@@ -1,3 +1,4 @@
+   
    @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -38,16 +39,19 @@
     padding: 0;
     color: #333;
     background-color: #f0f8ff;
+    padding-top: 70px; /* Adjust this value based on your header's height */
   }
   
   header {
     background-color: rgba(30, 144, 255, 0.9);
-    padding: 1rem;
+    padding: 1rem 2rem; /* Changed padding to include left and right */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
+    top: 0; /* Explicitly set top position */
+    left: 0; /* Explicitly set left position */
+    right: 0; /* Explicitly set right position */
     z-index: 1000;
     transition: background-color 0.3s ease;
   }
@@ -76,7 +80,7 @@
   
   .hero {
     background: linear-gradient(135deg, #1e90ff, #00ced1);
-    padding: 8rem 2rem 4rem;
+    padding: 4rem 2rem; /* Removed extra top padding */
     text-align: center;
     color: white;
     position: relative;
@@ -239,3 +243,5 @@
   }
   
   
+   
+   
